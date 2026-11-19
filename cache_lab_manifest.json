@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "runtime_context": {
+    "git_username": "240103142",
+    "instance_seed": 16286032091665361248,
+    "cpu_model": "Apple M1",
+    "architecture": "arm64",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python_implementation": "CPython",
+    "python_version": "3.13.0",
+    "gil_enabled": true,
+    "logical_cores": 8,
+    "cache_line_size_bytes": 128,
+    "affinity_supported": false,
+    "available_cpu_ids": null,
+    "assigned_cpu_ids": null,
+    "numba_version": "0.68.1",
+    "numpy_version": "2.5.5"
+  },
+  "thread_count": 4,
+  "iterations_per_thread": 60000000,
+  "required_iterations_per_thread": 60000000,
+  "full_workload": true,
+  "benchmarks": {
+    "layouts": {
+      "stride_1": {
+        "stride_elements": 1,
+        "spacing_bytes": 8,
+        "elapsed_ns": 107844500,
+        "ns_per_update": 0.4493520833333333,
+        "total_updates": 240000000,
+        "context_switches": {
+          "voluntary": 0,
+          "involuntary": 427
+        },
+        "thread_affinity": [
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          }
+        ],
+        "cache_line_groups": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "final_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "expected_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "parity_passed": true,
+        "base_address_64_byte_aligned": true,
+        "base_address_cache_line_aligned": true,
+        "trial_elapsed_ns": [
+          88438875,
+          117101083,
+          107844500
+        ],
+        "trial_context_switches": [
+          {
+            "voluntary": 0,
+            "involuntary": 427
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 2796
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 420
+          }
+        ],
+        "trial_min_ns": 88438875,
+        "trial_max_ns": 117101083,
+        "trial_parity_passed": [
+          true,
+          true,
+          true
+        ],
+        "trial_cache_line_groups": [
+          {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "stride_4": {
+        "stride_elements": 4,
+        "spacing_bytes": 32,
+        "elapsed_ns": 192650875,
+        "ns_per_update": 0.8027119791666667,
+        "total_updates": 240000000,
+        "context_switches": {
+          "voluntary": 0,
+          "involuntary": 2108
+        },
+        "thread_affinity": [
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          }
+        ],
+        "cache_line_groups": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "final_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "expected_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "parity_passed": true,
+        "base_address_64_byte_aligned": true,
+        "base_address_cache_line_aligned": true,
+        "trial_elapsed_ns": [
+          192650875,
+          136841500,
+          230643875
+        ],
+        "trial_context_switches": [
+          {
+            "voluntary": 0,
+            "involuntary": 57
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 3257
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 2108
+          }
+        ],
+        "trial_min_ns": 136841500,
+        "trial_max_ns": 230643875,
+        "trial_parity_passed": [
+          true,
+          true,
+          true
+        ],
+        "trial_cache_line_groups": [
+          {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "stride_8": {
+        "stride_elements": 8,
+        "spacing_bytes": 64,
+        "elapsed_ns": 39625583,
+        "ns_per_update": 0.16510659583333334,
+        "total_updates": 240000000,
+        "context_switches": {
+          "voluntary": 0,
+          "involuntary": 302
+        },
+        "thread_affinity": [
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          }
+        ],
+        "cache_line_groups": {
+          "0": [
+            0,
+            1
+          ],
+          "1": [
+            2,
+            3
+          ]
+        },
+        "final_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "expected_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "parity_passed": true,
+        "base_address_64_byte_aligned": true,
+        "base_address_cache_line_aligned": true,
+        "trial_elapsed_ns": [
+          24056708,
+          60817042,
+          39625583
+        ],
+        "trial_context_switches": [
+          {
+            "voluntary": 0,
+            "involuntary": 12
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 845
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 302
+          }
+        ],
+        "trial_min_ns": 24056708,
+        "trial_max_ns": 60817042,
+        "trial_parity_passed": [
+          true,
+          true,
+          true
+        ],
+        "trial_cache_line_groups": [
+          {
+            "0": [
+              0,
+              1
+            ],
+            "1": [
+              2,
+              3
+            ]
+          },
+          {
+            "0": [
+              0,
+              1
+            ],
+            "1": [
+              2,
+              3
+            ]
+          },
+          {
+            "0": [
+              0,
+              1
+            ],
+            "1": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "stride_16": {
+        "stride_elements": 16,
+        "spacing_bytes": 128,
+        "elapsed_ns": 30676167,
+        "ns_per_update": 0.1278173625,
+        "total_updates": 240000000,
+        "context_switches": {
+          "voluntary": 0,
+          "involuntary": 430
+        },
+        "thread_affinity": [
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          },
+          {
+            "requested_cpu": null,
+            "pinned": false
+          }
+        ],
+        "cache_line_groups": {
+          "0": [
+            0
+          ],
+          "1": [
+            1
+          ],
+          "2": [
+            2
+          ],
+          "3": [
+            3
+          ]
+        },
+        "final_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "expected_counters": [
+          16286032091725361248,
+          9240002837339008117,
+          2193973582952654986,
+          13594688402275853471
+        ],
+        "parity_passed": true,
+        "base_address_64_byte_aligned": true,
+        "base_address_cache_line_aligned": true,
+        "trial_elapsed_ns": [
+          30676167,
+          33621250,
+          30141958
+        ],
+        "trial_context_switches": [
+          {
+            "voluntary": 0,
+            "involuntary": 430
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 475
+          },
+          {
+            "voluntary": 0,
+            "involuntary": 418
+          }
+        ],
+        "trial_min_ns": 30141958,
+        "trial_max_ns": 33621250,
+        "trial_parity_passed": [
+          true,
+          true,
+          true
+        ],
+        "trial_cache_line_groups": [
+          {
+            "0": [
+              0
+            ],
+            "1": [
+              1
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              3
+            ]
+          },
+          {
+            "0": [
+              0
+            ],
+            "1": [
+              1
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              3
+            ]
+          },
+          {
+            "0": [
+              0
+            ],
+            "1": [
+              1
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              3
+            ]
+          }
+        ]
+      }
+    },
+    "register_private": {
+      "stride_elements": 16,
+      "spacing_bytes": 128,
+      "elapsed_ns": 183875,
+      "ns_per_update": 0.0007661458333333333,
+      "total_updates": 240000000,
+      "context_switches": {
+        "voluntary": 0,
+        "involuntary": 16
+      },
+      "thread_affinity": [
+        {
+          "requested_cpu": null,
+          "pinned": false
+        },
+        {
+          "requested_cpu": null,
+          "pinned": false
+        },
+        {
+          "requested_cpu": null,
+          "pinned": false
+        },
+        {
+          "requested_cpu": null,
+          "pinned": false
+        }
+      ],
+      "cache_line_groups": {
+        "0": [
+          0
+        ],
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ]
+      },
+      "final_counters": [
+        16286032091725361248,
+        9240002837339008117,
+        2193973582952654986,
+        13594688402275853471
+      ],
+      "expected_counters": [
+        16286032091725361248,
+        9240002837339008117,
+        2193973582952654986,
+        13594688402275853471
+      ],
+      "parity_passed": true,
+      "base_address_64_byte_aligned": true,
+      "base_address_cache_line_aligned": true,
+      "trial_elapsed_ns": [
+        183875,
+        103208,
+        441709
+      ],
+      "trial_context_switches": [
+        {
+          "voluntary": 0,
+          "involuntary": 19
+        },
+        {
+          "voluntary": 0,
+          "involuntary": 13
+        },
+        {
+          "voluntary": 0,
+          "involuntary": 16
+        }
+      ],
+      "trial_min_ns": 103208,
+      "trial_max_ns": 441709,
+      "trial_parity_passed": [
+        true,
+        true,
+        true
+      ],
+      "trial_cache_line_groups": [
+        {
+          "0": [
+            0
+          ],
+          "1": [
+            1
+          ],
+          "2": [
+            2
+          ],
+          "3": [
+            3
+          ]
+        },
+        {
+          "0": [
+            0
+          ],
+          "1": [
+            1
+          ],
+          "2": [
+            2
+          ],
+          "3": [
+            3
+          ]
+        },
+        {
+          "0": [
+            0
+          ],
+          "1": [
+            1
+          ],
+          "2": [
+            2
+          ],
+          "3": [
+            3
+          ]
+        }
+      ]
+    },
+    "thread_seeds": [
+      16286032091665361248,
+      9240002837279008117,
+      2193973582892654986,
+      13594688402215853471
+    ],
+    "iterations_per_thread": 60000000,
+    "trials": 3,
+    "slowdown_stride1_vs_stride8": 2.72158771771257,
+    "register_private_vs_stride1_speedup": 586.5098572399728
+  },
+  "verification": {
+    "parity_passed": true,
+    "all_final_counters_bit_exact": true,
+    "llvm_native_i64_load_count": 1,
+    "llvm_native_i64_store_count": 1,
+    "llvm_any_i64_store_count": 2,
+    "llvm_has_volatile_load_and_store": true,
+    "python_object_fallback_detected": false,
+    "llvm_audit_passed": true,
+    "private_baseline_i64_store_count": 1,
+    "private_baseline_i64_add_count": 1,
+    "private_baseline_one_store_verified": true,
+    "private_baseline_ir_examples": [
+      "%local_counter.2.0.lcssa = add i64 %arg.thread_seed, %1",
+      "store i64 %local_counter.2.0.lcssa, ptr %sunkaddr1, align 8"
+    ],
+    "private_python_object_fallback_detected": false,
+    "all_buffers_64_byte_aligned": true,
+    "all_buffers_cache_line_aligned": true,
+    "volatile_ir_examples": [
+      "%.242 = load volatile i64, ptr %0, align 8",
+      "store volatile i64 %.243, ptr %0, align 8"
+    ],
+    "verification_passed": true
+  },
+  "verification_passed": true
+}
